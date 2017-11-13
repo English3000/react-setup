@@ -18,7 +18,8 @@ __(2b)__ Create `/frontend` folder,
 // ./frontend/render.jsx
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<MyApp />, document.getElementById('app-display')); //OR 'root'
+  const props = {/*...*/};
+  ReactDOM.render(<MyApp props={props}/>, document.getElementById('app-display')); //OR 'root'
 });
 ```
 
