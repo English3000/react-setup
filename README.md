@@ -5,7 +5,7 @@ __(0)__ Create Project folder. `cd` into it.
 
 __(1a)__ Run `npm init --yes`
 
-__(1b)__ Run `npm install --save webpack react react-dom babel-core babel-loader babel-preset-es2015 babel-preset-react`
+__(1b)__ Run `npm install --save webpack react react-dom react-router-dom react-redux redux redux-logger redux-thunk babel-core babel-loader babel-preset-es2015 babel-preset-react`
 
 
 __(2a)__ Create `webpack.config.js` file: https://github.com/appacademy/curriculum/blob/master/react/readings/webpack_configuration.md#sample-webpackconfigjs
@@ -14,7 +14,7 @@ __(2b)__ Create `/frontend` folder,
             `render.jsx` file (or `entry.jsx`),
             `index.html` file.
             
-```
+```js
 // ./frontend/render.jsx
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -50,7 +50,7 @@ __(6a)__ Create parent (`app.jsx`) &
 
 __(6b)__ Skeleton each component.
 
-```
+```js
 // ./frontend/my_app.jsx
 
 import React from 'react';
@@ -76,7 +76,7 @@ export default class MyApp extends React.Component {
 
 OR *as Functional Component:*
 
-```
+```js
 export default const MyApp = () => (
   <div>
     <Child1 props />
